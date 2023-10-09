@@ -14,7 +14,7 @@ on:
         destinationPath = C:\Test\
 
         # Define credentials for the destination server (in Domain B)
-destinationCredentials = Get-Credential -Credential "us.hsi.local\USNYMEVHQA4"
+destinationCredentials = Get-Credential -Credential "USNYMEVHQA4\USHSI\Manasa.Kotte"
 
 Copy-Item -Path $sourcePath -Destination $destinationPath -ToSession $session
 
