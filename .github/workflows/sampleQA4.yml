@@ -6,16 +6,14 @@ on:
   pull_request:
     branches: [ "main" ]
 
-    Job:
-    Deploy:
+jobs:
+  deployandtest :
+   runs-on: windows-latest
+ 
 
-        sourcePath = C:\AQ4test\
-
-        destinationPath = C:\Test\
-
-            destinationCredentials = Get-Credential -Credential "USNYMEVHQA4\USHSI\Manasa.Kotte"
-
-                  Copy-Item -Path $sourcePath -Destination $destinationPath -ToSession $session
-
-                         Remove-PSSession $session
+         sourcePath = C:\AQ4test\
+         destinationPath = C:\Test\
+         destinationCredentials = Get-Credential -Credential "USNYMEVHQA4\USHSI\Manasa.Kotte"
+         Copy-Item -Path $sourcePath -Destination $destinationPath -ToSession $session
+        
      
